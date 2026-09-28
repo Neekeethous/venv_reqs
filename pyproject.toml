@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "web_ml_jupyter"
+version = "0.1.0"
+description = "Зависимости для ML, веб-сервера и jupyter"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "uvicorn==0.54.0",
+    "fastapi==0.141.1",
+    "gradio==6.28.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "numpy==2.5.3",
+    "pandas==3.0.6",
+    "scikit-learn==1.9.1",
+    "seaborn==0.13.2",
+    "plotly==7.1.0",
+]
+jupyter = [
+    "ipython==8.12.3",
+    "jupyter==1.1.1",
+]
+
+# Все зависимости
+all = [
+    "uvicorn==0.54.0",
+    "fastapi==0.141.1",
+    "gradio==6.28.0",
+    "numpy==2.5.3",
+    "pandas==3.0.6",
+    "scikit-learn==1.9.1",
+    "seaborn==0.13.2",
+    "plotly==7.1.0",
+    "ipython==8.12.3",
+    "jupyter==1.1.1",
+]
